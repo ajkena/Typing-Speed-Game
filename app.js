@@ -51,11 +51,8 @@ const updateTime = () => {
   }
 };
 
-//Counting down time
-// const timeInterval = setInterval(updateTime, 1000);
 
 const startGame = () => {
-  // Start the timer only when the game starts
   timeInterval = setInterval(updateTime, 1000);
 };
 
@@ -78,7 +75,6 @@ wordInput.addEventListener('input', async (e) => {
   const currentWord = document.getElementById('word').textContent;
 
   if (!timeInterval) {
-    // Start the game only if the timer is not already running
     startGame();
   }
 
